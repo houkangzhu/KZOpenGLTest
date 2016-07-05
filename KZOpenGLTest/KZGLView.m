@@ -9,6 +9,7 @@
 #import "KZGLView.h"
 #import <OpenGLES/ES2/glext.h>
 #import <OpenGLES/ES2/gl.h>
+#import "KZGLUtils.h"
 @implementation KZGLView
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -17,7 +18,10 @@
         [self setupContext]; // 设置context
         [self setupRenderBuffer]; // 设置渲染缓冲
         [self setupFrameBuffer]; // 设置帧缓冲
-        [self render]; // 渲染
+        [self setupProgram];
+        
+        [self renderNew];
+//        [self render]; // 渲染
     }
     return self;
 }
@@ -72,5 +76,61 @@
     glClearColor(0, 104.0/255.0, 55.0/255.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     [_context presentRenderbuffer:GL_RENDERBUFFER];
+}
+
+- (void)setupProgram {
+    NSString *vertexShaderPath = [[NSBundle mainBundle] pathForResource:@"VertexShader" ofType:@"glsl"];
+    NSString *fragmentShaderPath = [[NSBundle mainBundle] pathForResource:@"FragmentShader" ofType:@"glsl"];
+    
+    GLuint vertexShader = [KZGLUtils loadShader:GL_VERTEX_SHADER withShaderStringPath:vertexShaderPath];
+    
+    GLuint fragmentShader = [KZGLUtils loadShader:GL_FRAGMENT_SHADER withShaderStringPath:fragmentShaderPath];
+    
+    _programHandle = glCreateProgram();
+    if (!_programHandle) {
+        NSLog(@"Error: programHandle Field");
+        return;
+    }
+    
+    glAttachShader(_programHandle, vertexShader);
+    glAttachShader(_programHandle, fragmentShader);
+    
+    glLinkProgram(_programHandle);
+    GLint linked;
+    glGetProgramiv(_programHandle, GL_LINK_STATUS, &linked);
+    if (linked == GL_FALSE) {
+        GLint infoLen;
+        glGetProgramiv(_programHandle, GL_INFO_LOG_LENGTH, &infoLen);
+        if (infoLen > 1) {
+            char *infoLog = malloc(sizeof(char)*infoLen);
+            glGetProgramInfoLog(_programHandle, infoLen, NULL, infoLog);
+            printf("Error: link Error--> %s",infoLog);
+            free(infoLog);
+        }
+        glDeleteProgram(_programHandle);
+        _programHandle = 0;
+        return;
+    }
+    glUseProgram(_programHandle);
+    
+    _positionSlot = glGetAttribLocation(_programHandle, "vPosition");
+}
+
+- (void)renderNew {
+    glClearColor(0, 1.0, 0.0, 1);
+    glClear(GL_COLOR_BUFFER_BIT);
+    
+    glViewport(0, 0, self.frame.size.width, self.frame.size.height);
+    
+    GLfloat vertices[] = {
+        0.0f,  0.5f, 0.0f,
+        -0.5f, -0.5f, 0.0f,
+        0.5f,  -0.5f, 0.0f };
+    glVertexAttribPointer(_positionSlot, 3, GL_FLOAT, GL_FALSE, 0, vertices);
+    glEnableVertexAttribArray(_positionSlot);
+    
+    glDrawArrays(GL_TRIANGLES, 0, 3);
+    
+    [_context presentRenderbuffer:GL_RENDERBUFFER];;
 }
 @end

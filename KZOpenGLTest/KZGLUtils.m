@@ -36,7 +36,7 @@
     if (compiled == GL_FALSE) {
         GLint logLen = 0;
         glGetShaderiv(shader, GL_INFO_LOG_LENGTH, &logLen);
-        if (logLen > 0) {
+        if (logLen > 1) {
             char *logChar = malloc(sizeof(char) * logLen);
             glGetShaderInfoLog(shader, logLen, NULL, logChar);
             printf("Error: compily Faild!");
