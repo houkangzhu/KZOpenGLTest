@@ -9,9 +9,23 @@
 #import <Foundation/Foundation.h>
 
 @interface KZGLUtils : NSObject
-
+/**
+ *  编译 Shader
+ *
+ *  @param type       类型
+ *  @param shaderPath Shader程序的String
+ *
+ *  @return shader
+ */
 + (GLuint)loadShader:(GLenum)type  withShaderString:(NSString *)shaderString;
-
+/**
+ *  编译 Shader
+ *
+ *  @param type       类型
+ *  @param shaderPath 路径
+ *
+ *  @return shader
+ */
 + (GLuint)loadShader:(GLenum)type withShaderStringPath:(NSString *)shaderPath;
 
 @end

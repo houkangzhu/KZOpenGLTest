@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450869D71D2BB76600B6FFFE /* VertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 450869D61D2BB76600B6FFFE /* VertexShader.glsl */; };
+		450869D91D2BB7BA00B6FFFE /* FragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 450869D81D2BB7BA00B6FFFE /* FragmentShader.glsl */; };
 		45402EA21D2B7F2A00A5452B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EA11D2B7F2A00A5452B /* main.m */; };
 		45402EA51D2B7F2A00A5452B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EA41D2B7F2A00A5452B /* AppDelegate.m */; };
 		45402EA81D2B7F2A00A5452B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EA71D2B7F2A00A5452B /* ViewController.m */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		450869D61D2BB76600B6FFFE /* VertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VertexShader.glsl; sourceTree = "<group>"; };
+		450869D81D2BB7BA00B6FFFE /* FragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FragmentShader.glsl; sourceTree = "<group>"; };
 		45402E9D1D2B7F2A00A5452B /* KZOpenGLTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KZOpenGLTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45402EA11D2B7F2A00A5452B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		45402EA31D2B7F2A00A5452B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				45402EB81D2B7F4000A5452B /* KZGLView.m */,
 				45402EC21D2B823000A5452B /* KZGLUtils.h */,
 				45402EC31D2B823000A5452B /* KZGLUtils.m */,
+				450869D61D2BB76600B6FFFE /* VertexShader.glsl */,
+				450869D81D2BB7BA00B6FFFE /* FragmentShader.glsl */,
 				45402EA91D2B7F2A00A5452B /* Main.storyboard */,
 				45402EAC1D2B7F2A00A5452B /* Assets.xcassets */,
 				45402EAE1D2B7F2A00A5452B /* LaunchScreen.storyboard */,
@@ -158,7 +164,9 @@
 			files = (
 				45402EB01D2B7F2A00A5452B /* LaunchScreen.storyboard in Resources */,
 				45402EAD1D2B7F2A00A5452B /* Assets.xcassets in Resources */,
+				450869D71D2BB76600B6FFFE /* VertexShader.glsl in Resources */,
 				45402EAB1D2B7F2A00A5452B /* Main.storyboard in Resources */,
+				450869D91D2BB7BA00B6FFFE /* FragmentShader.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

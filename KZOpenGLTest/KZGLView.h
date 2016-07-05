@@ -12,5 +12,8 @@
     EAGLContext *_context;
     CAEAGLLayer *_eaglLayer;
     GLuint      _colorRenderBuffer;
+    
+    GLuint _programHandle;
+    GLuint _positionSlot;
 }
 @end
