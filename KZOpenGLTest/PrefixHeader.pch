@@ -13,6 +13,9 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #import <GLKit/GLKit.h>
-
+#import <OpenGLES/ES2/glext.h>
+#import <OpenGLES/ES2/gl.h>
+#import <OpenGLES/EAGL.h>
+#import <OpenGLES/gltypes.h>
 
 #endif /* PrefixHeader_pch */

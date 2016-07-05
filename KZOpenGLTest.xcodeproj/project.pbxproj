@@ -14,7 +14,9 @@
 		45402EAD1D2B7F2A00A5452B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45402EAC1D2B7F2A00A5452B /* Assets.xcassets */; };
 		45402EB01D2B7F2A00A5452B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45402EAE1D2B7F2A00A5452B /* LaunchScreen.storyboard */; };
 		45402EBB1D2B7F4000A5452B /* KZGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EB81D2B7F4000A5452B /* KZGLView.m */; };
-		45402EBC1D2B7F4000A5452B /* KZGLView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EBA1D2B7F4000A5452B /* KZGLView2.m */; };
+		45402EBF1D2B814000A5452B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45402EBE1D2B814000A5452B /* OpenGLES.framework */; };
+		45402EC11D2B814600A5452B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45402EC01D2B814600A5452B /* QuartzCore.framework */; };
+		45402EC41D2B823000A5452B /* KZGLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EC31D2B823000A5452B /* KZGLUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +32,11 @@
 		45402EB11D2B7F2A00A5452B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45402EB71D2B7F4000A5452B /* KZGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZGLView.h; sourceTree = "<group>"; };
 		45402EB81D2B7F4000A5452B /* KZGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZGLView.m; sourceTree = "<group>"; };
-		45402EB91D2B7F4000A5452B /* KZGLView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZGLView2.h; sourceTree = "<group>"; };
-		45402EBA1D2B7F4000A5452B /* KZGLView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZGLView2.m; sourceTree = "<group>"; };
 		45402EBD1D2B7F4D00A5452B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		45402EBE1D2B814000A5452B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		45402EC01D2B814600A5452B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		45402EC21D2B823000A5452B /* KZGLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZGLUtils.h; sourceTree = "<group>"; };
+		45402EC31D2B823000A5452B /* KZGLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZGLUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45402EC11D2B814600A5452B /* QuartzCore.framework in Frameworks */,
+				45402EBF1D2B814000A5452B /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +55,8 @@
 		45402E941D2B7F2A00A5452B = {
 			isa = PBXGroup;
 			children = (
+				45402EC01D2B814600A5452B /* QuartzCore.framework */,
+				45402EBE1D2B814000A5452B /* OpenGLES.framework */,
 				45402E9F1D2B7F2A00A5452B /* KZOpenGLTest */,
 				45402E9E1D2B7F2A00A5452B /* Products */,
 			);
@@ -71,8 +79,8 @@
 				45402EA71D2B7F2A00A5452B /* ViewController.m */,
 				45402EB71D2B7F4000A5452B /* KZGLView.h */,
 				45402EB81D2B7F4000A5452B /* KZGLView.m */,
-				45402EB91D2B7F4000A5452B /* KZGLView2.h */,
-				45402EBA1D2B7F4000A5452B /* KZGLView2.m */,
+				45402EC21D2B823000A5452B /* KZGLUtils.h */,
+				45402EC31D2B823000A5452B /* KZGLUtils.m */,
 				45402EA91D2B7F2A00A5452B /* Main.storyboard */,
 				45402EAC1D2B7F2A00A5452B /* Assets.xcassets */,
 				45402EAE1D2B7F2A00A5452B /* LaunchScreen.storyboard */,
@@ -162,8 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45402EBB1D2B7F4000A5452B /* KZGLView.m in Sources */,
-				45402EBC1D2B7F4000A5452B /* KZGLView2.m in Sources */,
 				45402EA81D2B7F2A00A5452B /* ViewController.m in Sources */,
+				45402EC41D2B823000A5452B /* KZGLUtils.m in Sources */,
 				45402EA51D2B7F2A00A5452B /* AppDelegate.m in Sources */,
 				45402EA21D2B7F2A00A5452B /* main.m in Sources */,
 			);
@@ -279,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KZOpenGLTest/PrefixHeader.pch";
 				INFOPLIST_FILE = KZOpenGLTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.houkangzhu.KZOpenGLTest;
@@ -290,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KZOpenGLTest/PrefixHeader.pch";
 				INFOPLIST_FILE = KZOpenGLTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.houkangzhu.KZOpenGLTest;
@@ -316,6 +326,7 @@
 				45402EB61D2B7F2A00A5452B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

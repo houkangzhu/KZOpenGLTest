@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "KZGLView.h"
 @interface ViewController ()
+
+@property (nonatomic, strong) KZGLView *glView;
 
 @end
 
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.glView = [[KZGLView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.view addSubview:self.glView];
 }
 
 - (void)didReceiveMemoryWarning {

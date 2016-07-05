@@ -7,7 +7,8 @@
 //
 
 #import "KZGLView.h"
-
+#import <OpenGLES/ES2/glext.h>
+#import <OpenGLES/ES2/gl.h>
 @implementation KZGLView
 
 - (instancetype)initWithFrame:(CGRect)frame {
