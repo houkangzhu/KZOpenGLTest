@@ -13,6 +13,8 @@
 		45402EAB1D2B7F2A00A5452B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45402EA91D2B7F2A00A5452B /* Main.storyboard */; };
 		45402EAD1D2B7F2A00A5452B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45402EAC1D2B7F2A00A5452B /* Assets.xcassets */; };
 		45402EB01D2B7F2A00A5452B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45402EAE1D2B7F2A00A5452B /* LaunchScreen.storyboard */; };
+		45402EBB1D2B7F4000A5452B /* KZGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EB81D2B7F4000A5452B /* KZGLView.m */; };
+		45402EBC1D2B7F4000A5452B /* KZGLView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EBA1D2B7F4000A5452B /* KZGLView2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		45402EAC1D2B7F2A00A5452B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45402EAF1D2B7F2A00A5452B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45402EB11D2B7F2A00A5452B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45402EB71D2B7F4000A5452B /* KZGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZGLView.h; sourceTree = "<group>"; };
+		45402EB81D2B7F4000A5452B /* KZGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZGLView.m; sourceTree = "<group>"; };
+		45402EB91D2B7F4000A5452B /* KZGLView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZGLView2.h; sourceTree = "<group>"; };
+		45402EBA1D2B7F4000A5452B /* KZGLView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZGLView2.m; sourceTree = "<group>"; };
+		45402EBD1D2B7F4D00A5452B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +69,15 @@
 				45402EA41D2B7F2A00A5452B /* AppDelegate.m */,
 				45402EA61D2B7F2A00A5452B /* ViewController.h */,
 				45402EA71D2B7F2A00A5452B /* ViewController.m */,
+				45402EB71D2B7F4000A5452B /* KZGLView.h */,
+				45402EB81D2B7F4000A5452B /* KZGLView.m */,
+				45402EB91D2B7F4000A5452B /* KZGLView2.h */,
+				45402EBA1D2B7F4000A5452B /* KZGLView2.m */,
 				45402EA91D2B7F2A00A5452B /* Main.storyboard */,
 				45402EAC1D2B7F2A00A5452B /* Assets.xcassets */,
 				45402EAE1D2B7F2A00A5452B /* LaunchScreen.storyboard */,
 				45402EB11D2B7F2A00A5452B /* Info.plist */,
+				45402EBD1D2B7F4D00A5452B /* PrefixHeader.pch */,
 				45402EA01D2B7F2A00A5452B /* Supporting Files */,
 			);
 			path = KZOpenGLTest;
@@ -149,6 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45402EBB1D2B7F4000A5452B /* KZGLView.m in Sources */,
+				45402EBC1D2B7F4000A5452B /* KZGLView2.m in Sources */,
 				45402EA81D2B7F2A00A5452B /* ViewController.m in Sources */,
 				45402EA51D2B7F2A00A5452B /* AppDelegate.m in Sources */,
 				45402EA21D2B7F2A00A5452B /* main.m in Sources */,
