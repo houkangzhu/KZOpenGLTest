@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		450869D71D2BB76600B6FFFE /* VertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 450869D61D2BB76600B6FFFE /* VertexShader.glsl */; };
 		450869D91D2BB7BA00B6FFFE /* FragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 450869D81D2BB7BA00B6FFFE /* FragmentShader.glsl */; };
+		452A4ABB1D2CB99000E2C212 /* ksVector.c in Sources */ = {isa = PBXBuildFile; fileRef = 452A4AB91D2CB99000E2C212 /* ksVector.c */; };
 		45402EA21D2B7F2A00A5452B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EA11D2B7F2A00A5452B /* main.m */; };
 		45402EA51D2B7F2A00A5452B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EA41D2B7F2A00A5452B /* AppDelegate.m */; };
 		45402EA81D2B7F2A00A5452B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EA71D2B7F2A00A5452B /* ViewController.m */; };
@@ -19,11 +20,19 @@
 		45402EBF1D2B814000A5452B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45402EBE1D2B814000A5452B /* OpenGLES.framework */; };
 		45402EC11D2B814600A5452B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45402EC01D2B814600A5452B /* QuartzCore.framework */; };
 		45402EC41D2B823000A5452B /* KZGLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 45402EC31D2B823000A5452B /* KZGLUtils.m */; };
+		455269871D2CF36D0014892E /* KZGLThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 455269861D2CF36D0014892E /* KZGLThreeViewController.m */; };
+		4552698A1D2D03B60014892E /* KZRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 455269891D2D03B60014892E /* KZRootViewController.m */; };
+		4579E50F1D2CAA2700CC2141 /* KZGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4579E50E1D2CAA2700CC2141 /* KZGLViewController.m */; };
+		4579E5111D2CACFC00CC2141 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4579E5101D2CACFC00CC2141 /* CoreGraphics.framework */; };
+		4579E5131D2CAD0300CC2141 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4579E5121D2CAD0300CC2141 /* GLKit.framework */; };
+		4579E5161D2CB85500CC2141 /* ksMatrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 4579E5141D2CB85500CC2141 /* ksMatrix.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		450869D61D2BB76600B6FFFE /* VertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VertexShader.glsl; sourceTree = "<group>"; };
 		450869D81D2BB7BA00B6FFFE /* FragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FragmentShader.glsl; sourceTree = "<group>"; };
+		452A4AB91D2CB99000E2C212 /* ksVector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ksVector.c; sourceTree = "<group>"; };
+		452A4ABA1D2CB99000E2C212 /* ksVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ksVector.h; sourceTree = "<group>"; };
 		45402E9D1D2B7F2A00A5452B /* KZOpenGLTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KZOpenGLTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45402EA11D2B7F2A00A5452B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		45402EA31D2B7F2A00A5452B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,6 +50,16 @@
 		45402EC01D2B814600A5452B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		45402EC21D2B823000A5452B /* KZGLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZGLUtils.h; sourceTree = "<group>"; };
 		45402EC31D2B823000A5452B /* KZGLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZGLUtils.m; sourceTree = "<group>"; };
+		455269851D2CF36D0014892E /* KZGLThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZGLThreeViewController.h; sourceTree = "<group>"; };
+		455269861D2CF36D0014892E /* KZGLThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZGLThreeViewController.m; sourceTree = "<group>"; };
+		455269881D2D03B60014892E /* KZRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZRootViewController.h; sourceTree = "<group>"; };
+		455269891D2D03B60014892E /* KZRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZRootViewController.m; sourceTree = "<group>"; };
+		4579E50D1D2CAA2700CC2141 /* KZGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZGLViewController.h; sourceTree = "<group>"; };
+		4579E50E1D2CAA2700CC2141 /* KZGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZGLViewController.m; sourceTree = "<group>"; };
+		4579E5101D2CACFC00CC2141 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4579E5121D2CAD0300CC2141 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		4579E5141D2CB85500CC2141 /* ksMatrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ksMatrix.c; sourceTree = "<group>"; };
+		4579E5151D2CB85500CC2141 /* ksMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ksMatrix.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4579E5131D2CAD0300CC2141 /* GLKit.framework in Frameworks */,
+				4579E5111D2CACFC00CC2141 /* CoreGraphics.framework in Frameworks */,
 				45402EC11D2B814600A5452B /* QuartzCore.framework in Frameworks */,
 				45402EBF1D2B814000A5452B /* OpenGLES.framework in Frameworks */,
 			);
@@ -56,9 +77,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		452A4ABC1D2CBA0A00E2C212 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				45402EC21D2B823000A5452B /* KZGLUtils.h */,
+				45402EC31D2B823000A5452B /* KZGLUtils.m */,
+				4579E5141D2CB85500CC2141 /* ksMatrix.c */,
+				4579E5151D2CB85500CC2141 /* ksMatrix.h */,
+				452A4AB91D2CB99000E2C212 /* ksVector.c */,
+				452A4ABA1D2CB99000E2C212 /* ksVector.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		45402E941D2B7F2A00A5452B = {
 			isa = PBXGroup;
 			children = (
+				4579E5121D2CAD0300CC2141 /* GLKit.framework */,
+				4579E5101D2CACFC00CC2141 /* CoreGraphics.framework */,
 				45402EC01D2B814600A5452B /* QuartzCore.framework */,
 				45402EBE1D2B814000A5452B /* OpenGLES.framework */,
 				45402E9F1D2B7F2A00A5452B /* KZOpenGLTest */,
@@ -79,12 +115,17 @@
 			children = (
 				45402EA31D2B7F2A00A5452B /* AppDelegate.h */,
 				45402EA41D2B7F2A00A5452B /* AppDelegate.m */,
+				455269881D2D03B60014892E /* KZRootViewController.h */,
+				455269891D2D03B60014892E /* KZRootViewController.m */,
 				45402EA61D2B7F2A00A5452B /* ViewController.h */,
 				45402EA71D2B7F2A00A5452B /* ViewController.m */,
+				4579E50D1D2CAA2700CC2141 /* KZGLViewController.h */,
+				4579E50E1D2CAA2700CC2141 /* KZGLViewController.m */,
+				455269851D2CF36D0014892E /* KZGLThreeViewController.h */,
+				455269861D2CF36D0014892E /* KZGLThreeViewController.m */,
 				45402EB71D2B7F4000A5452B /* KZGLView.h */,
 				45402EB81D2B7F4000A5452B /* KZGLView.m */,
-				45402EC21D2B823000A5452B /* KZGLUtils.h */,
-				45402EC31D2B823000A5452B /* KZGLUtils.m */,
+				452A4ABC1D2CBA0A00E2C212 /* Utils */,
 				450869D61D2BB76600B6FFFE /* VertexShader.glsl */,
 				450869D81D2BB7BA00B6FFFE /* FragmentShader.glsl */,
 				45402EA91D2B7F2A00A5452B /* Main.storyboard */,
@@ -177,10 +218,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4579E5161D2CB85500CC2141 /* ksMatrix.c in Sources */,
 				45402EBB1D2B7F4000A5452B /* KZGLView.m in Sources */,
 				45402EA81D2B7F2A00A5452B /* ViewController.m in Sources */,
 				45402EC41D2B823000A5452B /* KZGLUtils.m in Sources */,
+				452A4ABB1D2CB99000E2C212 /* ksVector.c in Sources */,
+				4552698A1D2D03B60014892E /* KZRootViewController.m in Sources */,
+				455269871D2CF36D0014892E /* KZGLThreeViewController.m in Sources */,
 				45402EA51D2B7F2A00A5452B /* AppDelegate.m in Sources */,
+				4579E50F1D2CAA2700CC2141 /* KZGLViewController.m in Sources */,
 				45402EA21D2B7F2A00A5452B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
